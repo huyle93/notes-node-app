@@ -8,7 +8,10 @@ const notes = require('./notes.js');
 // console.log(_.isString(true));
 // console.log(_.isString('Huy Le'));
 
-console.log(_.uniq([2,'huy',3,4,'huy',5,4,2]))
+
+var filteredArray = _.uniq([3,4,'huy',2,'huy',3])
+console.log(filteredArray)
+// console.log(_.uniq([2,'huy',3,4,'huy',5,4,2]))
 // lodash.com/docs
 
 /* var res = notes.addNote();
