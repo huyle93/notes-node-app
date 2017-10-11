@@ -2,12 +2,19 @@ console.log('starting app');
 
 const fs = require('fs');
 const os = require('os');
+const _ = require('lodash');
 const notes = require('./notes.js');
+
+// console.log(_.isString(true));
+// console.log(_.isString('Huy Le'));
+
+console.log(_.uniq([2,'huy',3,4,'huy',5,4,2]))
+// lodash.com/docs
 
 /* var res = notes.addNote();
 console.log(res) */
 
-console.log('Result: ', notes.addFunc(9,-2));
+// console.log('Result: ', notes.addFunc(9,-2));
 // var res = notes.addFunc(9,-2);
 // console.log(res)
 
