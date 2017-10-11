@@ -5,10 +5,5 @@ module.exports.addNote = () => {
     return 'New note';
 };
 
-module.exports.addFunc = (arg_a, arg_b) => {
-    return arg_a + arg_b;
-};
-
-
 
 
