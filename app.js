@@ -6,7 +6,7 @@ const notes = require('./notes.js');
 const yargs = require('yargs');
 
 const argv = yargs.argv;
-var command = argv._[0]
+var command = argv._[0];
 console.log('Command: ', command);
 console.log('Process',process.argv);
 console.log('Yargs', argv)
@@ -23,7 +23,7 @@ if (command === 'add') {
     notes.getNote(argv.title);
 } else if (command === 'remove') {
     // console.log('Remove note')
-    notes.removeNote(argv.title)
+    notes.removeNote(argv.title);
 } else {
     console.log('Command not recognized!');
 }
