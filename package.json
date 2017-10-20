@@ -9,6 +9,7 @@
   "author": "Huy Le",
   "license": "ISC",
   "dependencies": {
+    "jshint": "^2.9.5",
     "lodash": "^4.17.4",
     "yargs": "^4.7.1"
   }
