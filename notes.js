@@ -2,16 +2,18 @@ console.log('Starting notes.js');
 
 const fs = require('fs');
 
+// reusable functions
+
 var fetchNotes = () => {
     // check for existing note
     try {
         var noteString = fs.readFileSync('notes-data.json');
-        notes = JSON.parse(noteString);
+        return JSON.parse(noteString);
     } catch (e) {
         return [];
     }
 };
-
+    // save note
 var saveNotes = (notes) => {
     fs.writeFileSync('notes-data.json', JSON.stringify(notes));
 };
@@ -28,12 +30,8 @@ var addNote = (title, body) => {
 
     if (duplicateNotes.length === 0) {
         notes.push(note);
-        saveNotes(notes)
-        console.log('New note added');
-        // console.log('Adding note', title, body);
-    }
-    else {
-        console.log('Existing note');
+        saveNotes(notes);
+        return note;
     }
 };
 
